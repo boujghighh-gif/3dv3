@@ -23,7 +23,7 @@ const UI: React.FC = () => {
   } = useStore();
   
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioRef = useRef<mysong.mp3 | null>(null);
 
   const toggleAudio = () => {
     if (audioRef.current) {
